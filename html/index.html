@@ -5,155 +5,205 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    
-    <title>Primeiro Projeto</title>
+
+    <title>Rafael Nilton</title>
 </head>
 
 <body>
-    <header>
-        <h1>
-            <img class="logo-header" src="../img/logo.png" alt="Logo onde está escrito Rafael Nilton">
-        </h1>
-        <div class="inscrever">
-        <a href="#">Inscreva-se</a>
-        </div>
-    </header>
+    <div class="numeros">
+        <header>
 
-    <main>
+            <h1>
+                <img class="logo-header" src="../img/logo.svg" alt="Logo onde está escrito Rafael Nilton">
+            </h1>
+            <div class="inscrever">
+                <a href="#">Inscreva-se</a>
+            </div>
 
-        <article>
-            <section>
-                <p>Semana mudança de carreira</p>
-                <h2>Sua jornada de sucesso começa com a mudança na sua mente.</h2>
-                <p>Não importa se você hoje é atendente, vendedor ou motorista de aplicativo. Com uma mente voltada ao modo correto de pensar, rapidamente você terá condições de trabalhar com programação aqui ou no exterior. </p>
+        </header>
 
-                <form action="" method="post">
-                    <input type="email" name="" id="" placeholder="Digite seu e-mail">
-                    <button type="submit">
-                        Quero participar
-                    </button>
+        <main>
 
-                    <input type="checkbox" name="" id="">
-                    <label for="">Concordo com a Política de Privacidade.</label>
-                    <input type="checkbox" name="" id="">
-                    <label for="">Quero receber novidades através do e-mail.</label>
-                </form>
+            <section class="group1">
+                <article>
+                    <p class="cor">Semana mudança de carreira</p>
+                    <h2>Sua jornada de sucesso começa com a <span>mudança</span> na sua mente<span>.</span></h2>
+                    <p>Não importa se você hoje é atendente, vendedor ou motorista de aplicativo. Com uma mente voltada
+                        ao
+                        modo correto de pensar, rapidamente você terá condições de trabalhar com programação <span>aqui
+                            ou no
+                            exterior</span>.</p>
+
+                    <form action="" method="post">
+                        <input type="email" name="" id="" placeholder="Digite seu e-mail" class="email">
+                        <button type="submit">
+                            Quero participar
+                        </button><br>
+
+                        <label for="priv">
+                            <input type="checkbox" name="" id="priv" class="checkbox">
+                            Concordo com a <a href="#" class="cor">Política de Privacidade</a>.
+                        </label> <br>
+                        <label for="msg">
+                            <input type="checkbox" name="" id="msg" class="checkbox">
+                            Quero receber novidades através do e-mail.</label>
+                    </form>
+                </article>
+                <div class="img">
+                    <img src="../img/vetor.svg" alt="">
+                </div>
             </section>
 
-            <div>
-                <img src="" alt="">
-            </div>
-        </article>
+            <section class="group2">
+                <div class="container-aviso">
+                    <div class="img-aviso">
+                        <img src="../img/logo-icon.svg" alt="Ícone do logotipo de Rafael Nilton">
+                    </div>
 
-        <article>
-            <div>
-                <img src="" alt="">
-                <p>Nesta jornada, você será levado a uma nova realidade no mercado</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>Um novo horizonte</h3>
-                <p>Dar os primeiros passos rumo a uma nova carreira.</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>Novas habilidades</h3>
-                <p>Entender quais tecnologias são mais necessárias as empresas.</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>Uma visão elevada</h3>
-                <p>Pensar além do mercado, buscando ser uma pessoa requisitada pelas empresas.</p>
-            </div>
-        </article>
-
-        <article>
-            <div>
-                <img src="" alt="">
-                <p>Alunos que mudaram de vida com o meu método.</p>
-            </div>
-            <section>
-                <video width="320" height="240" controls>
-                    <source src="" type="">
-                    Your browser does not support the video tag.
-                </video>
-                <h3>José Hilux</h3>
-                <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada.</p>
+                    <p>Nesta jornada, você será levado a uma nova realidade no mercado</p>
+                </div>
+                <aside>
+                    <div class="container-realidade">
+                        <img src="../img/vetor1.svg" alt="">
+                        <h3>Um novo horizonte</h3>
+                        <p>Dar os primeiros passos rumo a uma nova carreira.</p>
+                    </div>
+                    <div class="container-realidade">
+                        <img src="../img/vetor2.svg" alt="" id="centralizar">
+                        <h3>Novas habilidades</h3>
+                        <p>Entender quais tecnologias são mais necessárias as empresas.</p>
+                    </div>
+                    <div class="container-realidade">
+                        <img src="../img/vetor3.svg" alt="">
+                        <h3>Uma visão elevada</h3>
+                        <p>Pensar além do mercado, buscando ser uma pessoa requisitada pelas empresas.</p>
+                    </div>
+                </aside>
             </section>
-            <section>
-                <video width="320" height="240" controls>
-                    <source src="" type="">
-                    Your browser does not support the video tag.
-                </video>
-                <h3>Hércules Sansão</h3>
-                <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada.</p>
-            </section>
-        </article>
 
-        <article>
-            <div>
-                <img src="" alt="">
-                <p>Afinal, quem é Rafael Nilton?</p>
-            </div>
-            <section>
+            <section class="group3">
+                <div style="background-color: rgba(11, 2, 46, 1);" class="container-aviso">
+                    <img src="../img/logo-icon.svg" alt="Ícone do logotipo de Rafael Nilton" class="img-aviso">
+                    <p>Alunos que mudaram de vida com o meu método.</p>
+                </div>
+                <div class="group3-articles">
+                    <article>
+                        <video width="320" height="240" controls>
+                            <source src="" type="">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>José Hilux</h3>
+                        <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem
+                            vindo
+                            a
+                            ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os
+                            caracteres
+                            de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas
+                            também
+                            o
+                            salto para a tipografia electrónica, mantendo-se essencialmente inalterada.</p>
+                    </article>
+                    <article>
+                        <video width="320" height="240" controls>
+                            <source src="" type="">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Hércules Sansão</h3>
+                        <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem
+                            vindo
+                            a
+                            ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os
+                            caracteres
+                            de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas
+                            também
+                            o
+                            salto para a tipografia electrónica, mantendo-se essencialmente inalterada.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="group4">
+                    <div class="container-aviso">
+                        <div class="img-aviso">
+                            <img src="../img/logo-icon.svg" alt="Ícone do logotipo de Rafael Nilton">
+                        </div>
+                        <p>Afinal, quem é Rafael Nilton?</p>
+                    </div>
+                    <article>
+                        <div class="img-circulo">
+                            <img src="../img/pessoa-circulo.jpg" alt="">
+                        </div>
+                        <div>
+                        <h3>Rafael Nilton </h3>
+                        <h4 class="cor">Tech Lead and Full-Stack Software Engineer</h4>
+                        <p>Software Engineer. Trabalho remotamente para uma empresa americana que contrata os melhores
+                            software
+                            engineers da america latina. Atuei no desenvolvimento de sistemas web, desenvolvimento
+                            mobile
+                            (Android e iOS) e gerenciamento de equipes. Tenho experiência com Javascript, typescript,
+                            Angular,
+                            angular.js, React Native, Node.js, MongoDB, HTML e CSS.</p>
+                        <form action="" method="post">
+                            <input type="email" name="" id="" placeholder="Digite seu e-mail" class="email">
+                            <button type="submit">
+                                Quero participar
+                            </button>
+                        </form>
+                        </div>
+                    </article>
+            </section>
+
+            <section class="group5">
+                <section>
+                    <p class="cor">
+                        Semana mudança de carreira
+                    </p>
+                    <h2>
+                        Não perca este chamado à <span>aventura</span>.
+                    </h2>
+                    <p>
+                        Como toda boa história, a sua terá momentos felizes, provações e desafios; momentos em que você
+                        pensará em desistir. Mas é por isso que o <span>meu método</span> está sendo lançado, para te
+                        fazer
+                        chegar ao fim
+                        e obter o tão sonhado <span>sucesso</span>!
+                    </p>
+
+                    <form action="" method="post">
+                        <input type="email" name="" id="" placeholder="Digite seu e-mail" class="email">
+                        <button type="submit">
+                            Quero participar
+                        </button><br>
+
+                        <label for="priv2">
+                            <input type="checkbox" name="" id="priv2" class="checkbox">
+                            Concordo com a <a href="#" class="cor">Política de Privacidade</a>.
+                        </label> <br>
+                        <label for="msg2">
+                            <input type="checkbox" name="" id="msg2" class="checkbox">
+                            Quero receber novidades através do e-mail.</label>
+                    </form>
+                </section>
                 <div>
                     <img src="" alt="">
                 </div>
-                <h3>Rafael Nilton </h3>
-                <h4>Tech Lead and Full-Stack Software Engineer</h4>
-                <p>Software Engineer. Trabalho remotamente para uma empresa americana que contrata os melhores software engineers da america latina. Atuei no desenvolvimento de sistemas web, desenvolvimento mobile (Android e iOS) e gerenciamento de equipes. Tenho experiência com Javascript, typescript, Angular, angular.js, React Native, Node.js, MongoDB, HTML e CSS.</p>
-                <form action="" method="post">
-                    <input type="email" name="" id="" placeholder="Digite seu e-mail">
-                    <button type="submit">
-                        Quero participar
-                    </button>
-                </form>
             </section>
-        </article>
+        </main>
 
-        <article>
-            <section>
-                <p>
-                    Semana mudança de carreira
-                </p>
-                <h2>
-                    Não perca este chamado à aventura.
-                </h2>
-                <p>
-                    Como toda boa história, a sua terá momentos felizes, provações e desafios; momentos em que você pensará em desistir. Mas é por isso que o meu método está sendo lançado, para te fazer chegar ao fim e obter o tão sonhado sucesso!
-                </p>
+        <footer>
+            <a href="#" class="cor">Políticas de Privacidade</a>
 
-                <form action="" method="post">
-                    <input type="email" name="" id="" placeholder="Digite seu e-mail">
-                    <button type="submit">
-                        Quero participar
-                    </button>
+            <img src="../img/creditos.svg" alt="">
+        </footer>
 
-                    <input type="checkbox" name="" id="">
-                    <label for="">Concordo com a Política de Privacidade.</label>
-                    <input type="checkbox" name="" id="">
-                    <label for="">Quero receber novidades através do e-mail.</label>
-                </form>
-            </section>
-            <div>
-                <img src="" alt="">
-            </div>
-        </article>
-    </main>
-
-    <footer>
-        <a href="#">Políticas de Privacidade</a>
-
-        <img src="" alt="">
-    </footer>
+    </div>
 </body>
 
 </html>
