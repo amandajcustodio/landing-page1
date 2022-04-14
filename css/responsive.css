@@ -14,7 +14,7 @@
     .img{
         margin-top: 30px;
     }
-    .button{
+    button{
         font-size: 13px;
     }
     form label{
@@ -81,7 +81,7 @@
         padding-bottom: 5px;
         line-height: 23.8px;
     }
-    .button{
+    button{
         display: inline-block;
     }
     .img{
@@ -146,7 +146,7 @@
         display: flex;
         height: 90vh;
     }
-    .button{
+    button{
         width: 150px;
     }
     .email{
