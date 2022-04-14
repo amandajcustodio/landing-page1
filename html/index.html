@@ -5,15 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Rafael Nilton</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-    <title>Rafael Nilton</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  
+
 </head>
 
 <body>
@@ -24,7 +30,7 @@
                 <img class="logo-header" src="../img/logo.svg" alt="Logo onde está escrito Rafael Nilton">
             </h1>
             <div class="inscrever">
-                <a href="#">Inscreva-se</a>
+                <a href="#form-final">Inscreva-se</a>
             </div>
 
         </header>
@@ -41,19 +47,19 @@
                             ou no
                             exterior</span>.</p>
 
-                    <form action="" method="post">
-                        <input type="email" name="" id="" placeholder="Digite seu e-mail" class="email">
-                        <button type="submit">
-                            Quero participar
-                        </button><br>
+                    <form method="post">
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" class="email" required>
+
+                        <input type="button" value="Quero participar" onclick="sendEmail()" class="button"> <br>
 
                         <label for="priv">
-                            <input type="checkbox" name="" id="priv" class="checkbox">
-                            Concordo com a <a href="#" class="cor">Política de Privacidade</a>.
+                            <input type="checkbox" name="priv" id="priv" class="checkbox" required>
+                            Concordo com a <a href="#" class="cor" required>Política de Privacidade</a>.
                         </label> <br>
                         <label for="msg">
-                            <input type="checkbox" name="" id="msg" class="checkbox">
-                            Quero receber novidades através do e-mail.</label>
+                            <input type="checkbox" name="msg" id="msg" class="checkbox">
+                            Quero receber novidades através do e-mail.
+                        </label>
                     </form>
                 </article>
                 <div class="img">
@@ -95,8 +101,8 @@
                 </div>
                 <div class="group3-articles">
                     <article>
-                        <video width="320" height="240" controls>
-                            <source src="" type="">
+                        <video controls>
+                            <source src="../video/intro_video.mp4" type="">
                             Your browser does not support the video tag.
                         </video>
                         <h3>José Hilux</h3>
@@ -111,8 +117,8 @@
                             salto para a tipografia electrónica, mantendo-se essencialmente inalterada.</p>
                     </article>
                     <article>
-                        <video width="320" height="240" controls>
-                            <source src="" type="">
+                        <video controls>
+                            <source src="../video/intro_video.mp4" type="">
                             Your browser does not support the video tag.
                         </video>
                         <h3>Hércules Sansão</h3>
@@ -129,81 +135,124 @@
                 </div>
             </section>
 
-            <section class="group4">
-                    <div class="container-aviso">
-                        <div class="img-aviso">
-                            <img src="../img/logo-icon.svg" alt="Ícone do logotipo de Rafael Nilton">
-                        </div>
-                        <p>Afinal, quem é Rafael Nilton?</p>
+
+            <div class="bg-color">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img src="../img/bg-pessoa1.png" style="width:100%">
                     </div>
-                    <article>
-                        <div class="img-circulo">
-                            <img src="../img/pessoa-circulo.jpg" alt="">
+
+                    <div class="mySlides fade">
+                        <img src="../img/bg-pessoa2.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../img/bg-pessoa3.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../img/bg-pessoa4.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../img/bg-pessoa5.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="../img/bg-pessoa6.png" style="width:100%">
+                    </div>
+
+                    <section class="group4">
+                        <div class="top">
+                            <div class="container-aviso">
+                                <div class="img-aviso">
+                                    <img src="../img/logo-icon.svg" alt="Ícone do logotipo de Rafael Nilton">
+                                </div>
+                                <p>Afinal, quem é Rafael Nilton?</p>
+                            </div>
+                            
+                            <article>
+                                <div class="img-circulo">
+                                    <img src="../img/pessoa-circulo.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h3>Rafael Nilton </h3>
+                                    <h4 class="cor">Tech Lead and Full-Stack Software Engineer</h4>
+                                    <p>Software Engineer. Trabalho remotamente para uma empresa americana que contrata
+                                        os
+                                        melhores
+                                        software
+                                        engineers da america latina. Atuei no desenvolvimento de sistemas web,
+                                        desenvolvimento
+                                        mobile
+                                        (Android e iOS) e gerenciamento de equipes. Tenho experiência com Javascript,
+                                        typescript,
+                                        Angular,
+                                        angular.js, React Native, Node.js, MongoDB, HTML e CSS.</p>
+                                    <form method="post">
+                                        <input type="email" name="" id="" placeholder="Digite seu e-mail" class="email">
+                                        <input type="button" value="Quero participar" onclick="sendEmail()" class="button"> <br>
+                                    </form>
+                                </div>
+                            </article>
+                        
                         </div>
-                        <div>
-                        <h3>Rafael Nilton </h3>
-                        <h4 class="cor">Tech Lead and Full-Stack Software Engineer</h4>
-                        <p>Software Engineer. Trabalho remotamente para uma empresa americana que contrata os melhores
-                            software
-                            engineers da america latina. Atuei no desenvolvimento de sistemas web, desenvolvimento
-                            mobile
-                            (Android e iOS) e gerenciamento de equipes. Tenho experiência com Javascript, typescript,
-                            Angular,
-                            angular.js, React Native, Node.js, MongoDB, HTML e CSS.</p>
-                        <form action="" method="post">
-                            <input type="email" name="" id="" placeholder="Digite seu e-mail" class="email">
-                            <button type="submit">
-                                Quero participar
-                            </button>
-                        </form>
-                        </div>
-                    </article>
-            </section>
+                    </section>
+
+                </div>
+            </div>
 
             <section class="group5">
-                <section>
-                    <p class="cor">
-                        Semana mudança de carreira
-                    </p>
-                    <h2>
-                        Não perca este chamado à <span>aventura</span>.
-                    </h2>
-                    <p>
-                        Como toda boa história, a sua terá momentos felizes, provações e desafios; momentos em que você
-                        pensará em desistir. Mas é por isso que o <span>meu método</span> está sendo lançado, para te
-                        fazer
-                        chegar ao fim
-                        e obter o tão sonhado <span>sucesso</span>!
-                    </p>
+                <article>
+                    <div id="form-final">
+                        <p class="cor">
+                            Semana mudança de carreira
+                        </p>
+                        <h2>
+                            Não perca este chamado à <span>aventura</span>.
+                        </h2>
+                        <p id="group5-paragrafo">
+                            Como toda boa história, a sua terá momentos felizes, provações e desafios; momentos em que
+                            você
+                            pensará em desistir. Mas é por isso que o <span>meu método</span> está sendo lançado, para
+                            te
+                            fazer
+                            chegar ao fim
+                            e obter o tão sonhado <span>sucesso</span>!
+                        </p>
 
-                    <form action="" method="post">
-                        <input type="email" name="" id="" placeholder="Digite seu e-mail" class="email">
-                        <button type="submit">
-                            Quero participar
-                        </button><br>
+                        <form method="post">
+                            <input type="email" placeholder="Digite seu e-mail" class="email">
+                            <input type="button" value="Quero participar" onclick="sendEmail()" class="button"> <br>
 
-                        <label for="priv2">
-                            <input type="checkbox" name="" id="priv2" class="checkbox">
-                            Concordo com a <a href="#" class="cor">Política de Privacidade</a>.
-                        </label> <br>
-                        <label for="msg2">
-                            <input type="checkbox" name="" id="msg2" class="checkbox">
-                            Quero receber novidades através do e-mail.</label>
-                    </form>
-                </section>
-                <div>
-                    <img src="" alt="">
-                </div>
+                            <label for="priv2">
+                                <input type="checkbox" name="" id="priv2" class="checkbox">
+                                Concordo com a <a href="#" class="cor">Política de Privacidade</a>.
+                            </label> <br>
+                            <label for="msg2">
+                                <input type="checkbox" name="" id="msg2" class="checkbox">
+                                Quero receber novidades através do e-mail.</label>
+                        </form>
+                    </div>
+
+                    <div id="pc">
+                        <img src="../img/vetor-pc.svg" alt="">
+                    </div>
+                </article>
+
             </section>
         </main>
 
         <footer>
-            <a href="#" class="cor">Políticas de Privacidade</a>
+            <p class="cor" style="font-size: 12px;"><i>Created by</i> Amanda Custodio &copy;</p>
 
             <img src="../img/creditos.svg" alt="">
         </footer>
 
     </div>
+
+    <script type="text/javascript" src="../js/index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,363 @@
+@media screen and (min-width: 450px) {
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo-header{
+        width: 180px;
+    }
+    .inscrever{
+        margin: 0;
+    }
+
+    .img{
+        margin-top: 30px;
+    }
+    .button{
+        font-size: 13px;
+    }
+    form label{
+        font-size: 12px;
+    }
+    .email{
+        padding: 7px;
+        margin-bottom: 15px;
+    }
+    ::placeholder {
+        font-size: 13px;
+    }
+    
+    .group4 article h3{
+        padding: 0;
+    }
+    .group4 article h4{
+        padding: 0;
+    }
+    .group4 article p{
+        padding: 0;
+    }
+    .group4 article form{
+        padding: 0;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .logo-header{
+        margin-left: 40px;
+        width: 200px;
+    }
+    .inscrever{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600; 
+        color: #43188D;
+        padding: 10px;
+        margin-right: 40px;
+        height: fit-content;
+    }
+    .group1{
+        margin-top: 0%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        justify-items: center;
+    }
+    .group1 article{
+        width: 80%;
+        z-index: 2;
+    }
+    .group1 h2{
+        line-height: 60px;
+        font-size: 40px;
+    }
+    .group1 p{
+        font-size: 14px;
+        padding-bottom: 5px;
+        line-height: 23.8px;
+    }
+    .button{
+        display: inline-block;
+    }
+    .img{
+        width: 80%;
+    }
+    .img img{
+        width: 100%;
+    }
+    .container-aviso{
+        width: 350px;
+    }
+    .container-realidade{
+        width: 350px;
+    }
+    .container-realidade img{
+        width: auto;
+    }
+    .container-realidade h3{
+        font-size: 18px;
+    }
+    .container-realidade p{
+        font-size: 12px;
+        width: 200px;
+    }
+    .group3 video{
+        width: 360px;
+    }
+    .group3 article p{
+        max-width: 36ch;
+        padding-left: 15px;
+        line-height: 25px;
+    }
+    .group4 section{
+        height: auto;
+    }
+    .group4 article p{
+        line-height: 25px;
+        max-width: 37ch;
+    }
+    .group4 article h3{
+        font-size: 22px;
+    }
+    .group4 article h4{
+        font-size: 16px;
+    }
+    .group5{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        justify-items: center;
+    }
+    .group5 article{
+        width: 80%;
+    }
+
+}
+
+@media screen and (min-width: 915px) {
+    .group1{
+        margin-top: 0%;
+        display: flex;
+        height: 90vh;
+    }
+    .button{
+        width: 150px;
+    }
+    .email{
+        width: 250px;
+    }
+    .group1 article{
+        width: 50%;
+    }
+    .group1 h2{
+        line-height: 7.95vh;
+        font-size: 40px;
+    }
+    .group1 p{
+        font-size: 14px;
+        padding-bottom: 5px;
+        line-height: 23.8px;
+    }
+    .img{
+        width: 50%;  
+    }
+    .img img{
+        width: 100%;
+        z-index: 1;
+    }
+    .group2{
+        padding-top: 25px;
+    }
+    .container-aviso{
+        width: 300px;
+        height: 55px;
+    }
+    .container-aviso p{
+        font-size: 13px;
+    }
+    .group2 aside{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+    }
+    .container-realidade{
+        width: 260px;
+    }
+    .container-realidade img{
+        width: 220px;
+    }
+    .container-realidade h3{
+        font-size: 18px;
+    }
+    .container-realidade p{
+        font-size: 12px;
+        width: 200px;
+    }
+
+    .group3-articles{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+    .group3 article p{
+        max-width: 35ch;
+        text-align: left;
+    }
+
+    .group4 article{
+        display: flex;
+        height: 700px;
+        justify-items: end;
+        align-items: flex-end;
+        margin-left: 150px;
+        margin-right: 20px;
+    }
+    .img-circulo img {
+        width: calc(290px - 25px);
+    }
+    .group4 article div{
+        padding-left: 40px;
+    }
+    .group4 article p{
+        max-width: 50ch;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .group4 article h3{
+        font-size: 25px;
+    }
+    .group4 article h4{
+        font-size: 16px;
+        margin-top: -20px;
+    }
+    .group5{
+        height: 500px;
+        position: relative;
+        width: 100%;
+    }
+    .group5 article div{
+        position: absolute;
+    }
+    .group5 article div h2{
+        font-size: 22px;
+        max-width: 25ch;
+    }
+    #pc{
+        right: 10%;
+        background-position-y: bottom;
+        background-position-x: center;
+        margin: 50px -5px 60px 0;
+    }
+    #pc img{
+        width: 400px;
+    }
+    #group5-paragrafo{
+        max-width: 37ch;
+        line-height: 25px;
+    }
+    #form-final{
+        left: 5%;
+        margin: 60px 0 0 55px;
+    }
+    footer{
+        height: 58px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 108px;
+        padding-right: 93px;
+    }
+}
+
+@media screen and (min-width: 1250px){
+    .group1{
+        height: 100vh;
+        align-items: center;
+    }
+    .img{
+        width: 50%;
+    }
+    .img img{
+        width: 100%;
+        margin-top: -5%;
+        z-index: 1;
+    }
+    .container-aviso{
+        width: 350px;
+        height: 55px;
+    }
+    .container-realidade{
+        width: 350px;
+    }
+    .container-realidade img{
+        width: auto;
+    }
+    .container-realidade h3{
+        font-size: 20px;
+    }
+    .container-realidade p{
+        font-size: 13px;
+        width: 250px;
+    }
+
+    .group3 video{
+        width: 440px;
+    }
+    .group3 article p{
+        max-width: 45ch;
+        padding-left: 20px;
+    }
+
+    .group4 article{
+        margin-left: 400px;
+    }
+
+    .img-circulo img{
+        width: 290px;
+    }
+    
+    
+    .group4 article h3{
+        font-size: 30px;
+    }
+    .group4 article p {
+        max-width: 40ch;
+        font-size: 16px;
+    }
+    .group4 article h4 {
+        margin-top: 0;
+        max-width: 35ch;
+        font-size: 18px;
+    }
+
+    #pc{
+        margin: 10px 55px 60px 0;
+    }
+    #pc img{
+        width: 500px;
+    }
+    #group5-paragrafo{
+        max-width: 48ch;
+        line-height: 28px;
+    }
+    #form-final{
+        left: 10%;
+        margin: 60px 0 0 55px;
+    }
+
+    footer{
+        padding-left: 209px;
+        padding-right: 195px;
+    }
+} 
